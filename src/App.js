@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.scss';
 import {
   BrowserRouter as Router,
@@ -10,13 +9,16 @@ function App() {
   return (
     <Router>
     <div>
-      <nav>
-        <ul>
-          <li>
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <ul class="navbar-nav mr-auto">
+          <li class="px-3">
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li class="px-3">
             <Link to="/about">About</Link>
+          </li>
+          <li class="px-3">
+            <Link to="/contact">Contact me</Link>
           </li>
         </ul>
       </nav>
@@ -24,12 +26,16 @@ function App() {
       {/* A <Switch> looks through its children <Route>s and
           renders the first one that matches the current URL. */}
       <Switch>
+      <Route path="/contact">
+          <Contact />
+        </Route>
         <Route path="/about">
           <About />
         </Route>
         <Route path="/">
           <Home />
         </Route>
+        
       </Switch>
     </div>
   </Router>
@@ -44,5 +50,8 @@ function About() {
 return <h2>About</h2>;
 }
 
+function Contact() {
+  return <h2>Contact</h2>
+}
 
 export default App;
