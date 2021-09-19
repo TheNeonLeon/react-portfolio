@@ -1,4 +1,5 @@
 import './App.scss';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,12 +16,16 @@ function App() {
             <Link to="/">Home</Link>
           </li>
           <li class="px-3">
-            <Link to="/about">About</Link>
+            <Link to="/projects">Projects</Link>
           </li>
           <li class="px-3">
             <Link to="/contact">Contact me</Link>
           </li>
         </ul>
+        <li class="icons px-5">
+        <a href="https://www.linkedin.com/in/leon-listo/" target="_blank"> <i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/TheNeonLeon" target="_blank"><i class="bi bi-github"></i></a>
+        </li>
       </nav>
 
       {/* A <Switch> looks through its children <Route>s and
@@ -29,8 +34,8 @@ function App() {
       <Route path="/contact">
           <Contact />
         </Route>
-        <Route path="/about">
-          <About />
+        <Route path="/Projects">
+          <Projects />
         </Route>
         <Route path="/">
           <Home />
@@ -42,12 +47,14 @@ function App() {
 );
 }
 
+
+
 function Home() {
 return <h2>Home</h2>;
 }
 
-function About() {
-return <h2>About</h2>;
+function Projects() {
+return <h2>Projects</h2>;
 }
 
 function Contact() {
