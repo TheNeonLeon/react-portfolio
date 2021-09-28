@@ -58,6 +58,9 @@ return (
     <div class="row">
     <div class="col-md">
       <img class="img-fluid" src={tdd} alt="project"></img>
+      <h4>Built a responsive web app. You can see different events from a static
+JSON file in a user-friendly way. You can register for an event
+with a form. The data in the form is saved in localStorage</h4>
     </div>
     <div class="col-md">
     <img class="img-fluid" src={tdd} alt="project"></img>
