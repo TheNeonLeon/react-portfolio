@@ -1,4 +1,5 @@
 import './App.scss';
+import tdd from './img/tdd-app.png';
 
 import {
   BrowserRouter as Router,
@@ -55,14 +56,14 @@ return (
     <h1>Hello, my name is Leon Listo. Welcome to my portfolio.</h1>
     <div class="container-fluid">
     <div class="row">
-    <div class="col-sm">
-      One of three columns
+    <div class="col-md">
+      <img class="img-fluid" src={tdd} alt="project"></img>
     </div>
-    <div class="col-sm">
-      One of three columns
+    <div class="col-md">
+    <img class="img-fluid" src={tdd} alt="project"></img>
     </div>
-    <div class="col-sm">
-      One of three columns
+    <div class="col-md">
+    <img class="img-fluid" src={tdd} alt="project"></img>
     </div>
    </div>
   </div>
