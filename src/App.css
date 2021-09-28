@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 .App {
   text-align: center;
 }
@@ -66,5 +67,9 @@ a {
 }
 li{
   text-decoration: none;
+}
+.home-container{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
 /*# sourceMappingURL=App.css.map */

@@ -23,8 +23,8 @@ function App() {
           </li>
         </ul>
         <li class="icons px-5">
-        <a href="https://www.linkedin.com/in/leon-listo/" target="_blank"> <i class="bi bi-linkedin"></i></a>
-        <a href="https://github.com/TheNeonLeon" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/leon-listo/" target="_blank" rel="noreferrer"> <i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/TheNeonLeon" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
         </li>
       </nav>
 
@@ -50,7 +50,25 @@ function App() {
 
 
 function Home() {
-return <h2>Home</h2>;
+return (
+  <div className="home-container">
+    <h1>Hello, my name is Leon Listo. Welcome to my portfolio.</h1>
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+   </div>
+  </div>
+  </div>
+  
+)
 }
 
 function Projects() {
