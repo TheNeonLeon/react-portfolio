@@ -1,5 +1,7 @@
 import './App.scss';
 import tdd from './img/tdd-app.png';
+import { useSpring, animated } from 'react-spring';
+
 
 import {
   BrowserRouter as Router,
@@ -44,6 +46,7 @@ function App() {
         
       </Switch>
     </div>
+
   </Router>
 );
 }
@@ -51,9 +54,17 @@ function App() {
 
 
 function Home() {
+  const props = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 },
+    reset: false,
+    delay: 200,
+    config: { duration: 500 }
+  })
 return (
-  <div className="home-container">
+  <animated.div style={props} className="home-container">
     <h1>Hello, my name is Leon Listo. Welcome to my portfolio.</h1>
+    <h3>Check out my projects</h3>
     <div class="container-fluid">
     <div class="row">
     <div class="col-md">
@@ -76,7 +87,7 @@ with a form. The data in the form is saved in localStorage</h4>
     </div>
    </div>
   </div>
-  </div>
+  </animated.div>
   
 )
 }
