@@ -59,7 +59,7 @@ function Home() {
     from: { opacity: 0 },
     reset: false,
     delay: 200,
-    config: { duration: 500 }
+    config: { duration: 800 }
   })
 return (
   <animated.div style={props} className="home-container">
