@@ -79,4 +79,8 @@ li{
   border: 1px rgba(0, 0, 0, 0.541) solid;
   margin: 0.5%;
 }
+.bi-display, .bi-code-slash{
+  font-size: 165%;
+  margin: 10%;
+}
 /*# sourceMappingURL=App.css.map */

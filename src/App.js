@@ -61,6 +61,12 @@ return (
       <h4>Built a responsive web app. You can see different events from a static
 JSON file in a user-friendly way. You can register for an event
 with a form. The data in the form is saved in localStorage</h4>
+<a href="https://tdd-vue-app.herokuapp.com/#/" target="_blank" rel="noreferrer"> 
+ <i class="bi bi-display"></i>
+ </a>
+    <a href="https://github.com/TheNeonLeon/tdd-app" target="_blank" rel="noreferrer">
+      <i class="bi bi-code-slash"></i>
+      </a>
     </div>
     <div class="col-md">
     <img class="img-fluid" src={tdd} alt="project"></img>
