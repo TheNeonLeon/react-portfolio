@@ -109,6 +109,20 @@ save songs
                 <b>Technologies:</b> JavaScript, Nuxt.js,
                 Bootstrap, Firebase, REST API
             </h4>
+            <a
+              href="https://mystifying-heyrovsky-442731.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="bi bi-display"></i>
+            </a>
+            <a
+              href="https://github.com/TheNeonLeon/nya-examensarbete"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="bi bi-code-slash"></i>
+            </a>
           </div>
           <div class="col-md">
             <img class="img-fluid" src={tdd} alt="project"></img>
