@@ -1,5 +1,7 @@
 import "./App.scss";
 import tdd from "./img/tdd-app.png";
+import music from "./img/musicscape.png";
+
 import { useSpring, animated } from "react-spring";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -72,10 +74,14 @@ function Home() {
         <div class="row">
           <div class="col-md">
             <img class="img-fluid" src={tdd} alt="project"></img>
+            <h3>The Meetup Hub</h3>
             <h4>
               Built a responsive web app. You can see different events from a
               static JSON file in a user-friendly way. You can register for an
               event with a form. The data in the form is saved in localStorage
+              <hr></hr>
+             <b> Technologies:</b> Vuejs, Vue-router, Docker, unit testing med vue test utils och
+jest
             </h4>
             <a
               href="https://tdd-vue-app.herokuapp.com/#/"
@@ -93,7 +99,16 @@ function Home() {
             </a>
           </div>
           <div class="col-md">
-            <img class="img-fluid" src={tdd} alt="project"></img>
+            <img class="img-fluid" src={music} alt="project"></img>
+            <h3>MusicScape</h3>
+            <h4>Me and two classmates have built a music
+                app for our master thesis.where you can listen to
+music. Create an account to then be able to create your own playlists where you can
+save songs
+                <hr></hr>
+                <b>Technologies:</b> JavaScript, Nuxt.js,
+                Bootstrap, Firebase, REST API
+            </h4>
           </div>
           <div class="col-md">
             <img class="img-fluid" src={tdd} alt="project"></img>
