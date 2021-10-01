@@ -120,7 +120,7 @@ save songs.
                 Bootstrap, Firebase, REST API
             </h4>
             <a
-              href="https://mystifying-heyrovsky-442731.netlify.app/"
+              href="https://musicscape.netlify.app/"
               target="_blank"
               rel="noreferrer"
             >
@@ -148,8 +148,10 @@ save songs.
 
 function About() {
   return (
-  <div>
-    <h2>About</h2>;
+  <div className="page-container">
+        <ParticleBackground  />
+<h1>About</h1>
+    <h2>I'm a passionate Front-end developer who loves converting new ideas and concepts into code. I'm a visual person with an eye for good and modern design.</h2>;
   </div>
   )
 }

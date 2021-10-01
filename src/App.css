@@ -85,7 +85,7 @@ li{
 }
 
 .col-md{
-  border: 1px rgb(255, 255, 255) solid;
+  border: 0 rgb(255, 255, 255) solid;
   border-radius: 2%;
   background-color: #131212;
 }
@@ -111,6 +111,10 @@ h1{
 }
 h1,h3,h4,b,p{
   color:white;
+}
+.home-container{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
 /* -----BREAKPOINTS-----*/
 @media (min-width: 768px){
