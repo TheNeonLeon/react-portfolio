@@ -1,6 +1,7 @@
 import "./App.scss";
 import tdd from "./img/tdd-app.png";
 import music from "./img/musicscape.png";
+import portfolio from "./img/portfolio.png";
 
 
 import { useSpring, animated } from "react-spring";
@@ -17,12 +18,12 @@ function App() {
             <li class="px-3">
               <Link to="/">Home</Link>
             </li>
-            <li class="px-3">
+            {/*<li class="px-3">
               <Link to="/about">About</Link>
             </li>
             <li class="px-3">
               <Link to="/contact">Contact me</Link>
-            </li>
+  </li>*/}
           </ul>
           <li class="icons px-5">
             <a
@@ -68,7 +69,7 @@ function Home() {
     to: { opacity: 1 },
     from: { opacity: 0 },
     reset: false,
-    delay: 200,
+    delay: 100,
     config: { duration: 800 },
   });
 
@@ -90,7 +91,7 @@ function Home() {
               static JSON file in a user-friendly way. You can register for an
               event with a form. The data in the form is saved in localStorage
               <hr></hr>
-             <b> Technologies:</b> Vuejs, Vue-router, Docker, unit testing med vue test utils och
+             <b> Technologies:</b> Vuejs, Vue-router, Docker, unit testing with vue test utils and
 jest
             </h4>
             <a
@@ -135,8 +136,23 @@ save songs.
             </a>
           </div>
           <div class="col-md">
-            <img class="img-fluid" src={tdd} alt="project"></img>
-          </div>
+            <img class="img-fluid" src={portfolio} alt="project"></img>
+            <h3>Portfolio</h3>
+            <h4>My personal portfolio, built using different types of technologies. It's responsive so it fits for every type of device.
+              Feel free to check out the code on Github!
+                <hr></hr>
+                <b>Technologies:</b> React, React-spring, React-router,
+                Bootstrap, Particle.js
+            </h4>
+          
+            <a
+              href="https://github.com/TheNeonLeon/react-portfolio"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="bi bi-code-slash"></i>
+            </a>
+            </div>
         </div>
         
       </div>

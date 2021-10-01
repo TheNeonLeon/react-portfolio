@@ -72,9 +72,13 @@ a {
   color: inherit;
   text-decoration: none;
 }
+.icons{
+  font-size: 1.3rem;
+}
 li{
   text-decoration: none;
   color: white;
+  list-style: none;
 }
 .home-container{
   text-align: center;
@@ -97,6 +101,9 @@ li{
 .bi-display:hover, .bi-code-slash:hover{
   color: #0d6efd;
 }
+.bi-linkedin{
+  margin-right: 15px;
+}
 canvas{
   background-color: rgba(0, 0, 0, 0.945);
   position:fixed !important;
@@ -117,6 +124,10 @@ h1,h3,h4,b,p{
   font-family: 'Open Sans', sans-serif;
 }
 /* -----BREAKPOINTS-----*/
+.navbar-expand-md {
+  flex-wrap: nowrap;
+  justify-content: center;
+}
 @media (min-width: 768px){
   .col-md{
     margin: 1%;
