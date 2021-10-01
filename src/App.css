@@ -80,11 +80,28 @@ li{
 .img-fluid{
   max-width: 100%;
 }
+
 .col-md{
   border: 1px rgba(0, 0, 0, 0.541) solid;
+  border-radius: 2%;
 }
 .bi-display, .bi-code-slash{
   font-size: 165%;
   margin: 5%;
+}
+canvas{
+  background-color: black;
+}
+/* -----BREAKPOINTS-----*/
+@media (min-width: 768px){
+  .col-md{
+    margin: 1%;
+
+  }
+}
+@media (max-width: 576px){
+  .col-md{
+    margin-top: 5%;
+  }
 }
 /*# sourceMappingURL=App.css.map */

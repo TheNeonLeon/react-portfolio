@@ -2,10 +2,13 @@ import "./App.scss";
 import tdd from "./img/tdd-app.png";
 import music from "./img/musicscape.png";
 
+
 import { useSpring, animated } from "react-spring";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import ParticleBackground from "./ParticleBackground";
 function App() {
+  
   return (
     <Router>
       <div>
@@ -15,7 +18,7 @@ function App() {
               <Link to="/">Home</Link>
             </li>
             <li class="px-3">
-              <Link to="/projects">Projects</Link>
+              <Link to="/about">About</Link>
             </li>
             <li class="px-3">
               <Link to="/contact">Contact me</Link>
@@ -46,8 +49,8 @@ function App() {
           <Route path="/contact">
             <Contact />
           </Route>
-          <Route path="/Projects">
-            <Projects />
+          <Route path="/about">
+            <About />
           </Route>
           <Route path="/">
             <Home />
@@ -66,11 +69,15 @@ function Home() {
     delay: 200,
     config: { duration: 800 },
   });
+
   return (
+    
     <animated.div style={props} className="home-container">
-      <h1>Hello, my name is Leon Listo. Welcome to my portfolio.</h1>
-      <h3>Check out my projects</h3>
-      <div class="container-fluid">
+
+      <h1>Hello, my name is Leon Listo. I'm a Front-end developer.</h1>
+      <h3> Welcome to my portfolio. Check out my projects</h3>
+      <div class="container">
+        
         <div class="row">
           <div class="col-md">
             <img class="img-fluid" src={tdd} alt="project"></img>
@@ -128,13 +135,20 @@ save songs
             <img class="img-fluid" src={tdd} alt="project"></img>
           </div>
         </div>
+        
       </div>
+      <ParticleBackground />
+
     </animated.div>
   );
 }
 
-function Projects() {
-  return <h2>Projects</h2>;
+function About() {
+  return (
+  <div>
+    <h2>About</h2>;
+  </div>
+  )
 }
 
 function Contact() {
