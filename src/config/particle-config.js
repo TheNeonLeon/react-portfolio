@@ -49,12 +49,12 @@ const particlesConfig = {
         enable: true,
         distance: 150,
         color: "#ffffff",
-        opacity: 0.4,
+        opacity: 0.1,
         width: 1
       },
       move: {
         enable: true,
-        speed: 2.2,
+        speed: 0.4,
         direction: "none",
         random: false,
         straight: false,

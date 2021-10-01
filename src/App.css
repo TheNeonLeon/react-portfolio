@@ -65,13 +65,16 @@ html, body {
             transform: rotate(360deg);
   }
 }
-
+.navbar{
+  background-color: #131212 !important;
+}
 a {
   color: inherit;
   text-decoration: none;
 }
 li{
   text-decoration: none;
+  color: white;
 }
 .home-container{
   text-align: center;
@@ -82,15 +85,32 @@ li{
 }
 
 .col-md{
-  border: 1px rgba(0, 0, 0, 0.541) solid;
+  border: 1px rgb(255, 255, 255) solid;
   border-radius: 2%;
+  background-color: #131212;
 }
 .bi-display, .bi-code-slash{
   font-size: 165%;
   margin: 5%;
+  color: white;
+}
+.bi-display:hover, .bi-code-slash:hover{
+  color: #0d6efd;
 }
 canvas{
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.945);
+  position:fixed !important;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+    z-index:-1;
+}
+h1{
+  font-weight: 900;
+}
+h1,h3,h4,b,p{
+  color:white;
 }
 /* -----BREAKPOINTS-----*/
 @media (min-width: 768px){

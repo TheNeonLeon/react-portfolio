@@ -53,11 +53,13 @@ function App() {
             <About />
           </Route>
           <Route path="/">
+            
             <Home />
           </Route>
         </Switch>
       </div>
     </Router>
+    
   );
 }
 
@@ -71,12 +73,13 @@ function Home() {
   });
 
   return (
-    
-    <animated.div style={props} className="home-container">
+    <div>
+    <animated.div style={props} className="home-container" >
+    <ParticleBackground  />
 
       <h1>Hello, my name is Leon Listo. I'm a Front-end developer.</h1>
       <h3> Welcome to my portfolio. Check out my projects</h3>
-      <div class="container">
+      <div class="container-fluid">
         
         <div class="row">
           <div class="col-md">
@@ -109,9 +112,9 @@ jest
             <img class="img-fluid" src={music} alt="project"></img>
             <h3>MusicScape</h3>
             <h4>Me and two classmates have built a music
-                app for our master thesis.where you can listen to
-music. Create an account to then be able to create your own playlists where you can
-save songs
+                app for our master thesis, where you can listen to
+music and create an account to then be able to create your own playlists where you can
+save songs.
                 <hr></hr>
                 <b>Technologies:</b> JavaScript, Nuxt.js,
                 Bootstrap, Firebase, REST API
@@ -137,9 +140,9 @@ save songs
         </div>
         
       </div>
-      <ParticleBackground />
 
     </animated.div>
+    </div>
   );
 }
 
