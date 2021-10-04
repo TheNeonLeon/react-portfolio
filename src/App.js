@@ -67,9 +67,8 @@ function App() {
 function Home() {
   const props = useSpring({
     to: { opacity: 1 },
-    from: { opacity: 0 },
+    from: { opacity: 0.8 },
     reset: false,
-    delay: 100,
     config: { duration: 800 },
   });
 
