@@ -2,7 +2,7 @@ import "./App.scss";
 import tdd from "./img/tdd-app.png";
 import music from "./img/musicscape.png";
 import portfolio from "./img/portfolio.png";
-
+import ContactMe from "./ContactMe";
 
 import { useSpring, animated } from "react-spring";
 
@@ -20,10 +20,10 @@ function App() {
             </li>
             {/*<li class="px-3">
               <Link to="/about">About</Link>
-            </li>
+            </li>*/}
             <li class="px-3">
               <Link to="/contact">Contact me</Link>
-  </li>*/}
+  </li>
           </ul>
           <li class="icons px-5">
             <a
@@ -173,7 +173,16 @@ function About() {
 }
 
 function Contact() {
-  return <h2>Contact</h2>;
+  return (
+  <div className="contact-container">
+    
+        <ParticleBackground  />
+<div className="col-md">
+  <h2>Contact Me</h2>;
+  <ContactMe />
+  </div>
+  </div>
+  )
 }
 
 export default App;
