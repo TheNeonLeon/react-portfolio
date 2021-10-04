@@ -177,7 +177,7 @@ function Contact() {
   <div className="contact-container">
     
         <ParticleBackground  />
-<div className="col-md">
+<div id="contact-wrapper" className="col-md">
   <h2>Contact Me</h2>;
   <ContactMe />
   </div>

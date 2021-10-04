@@ -13,7 +13,7 @@ form{
 .btn{
       position: absolute;
 }
-.col-md{
+#contact-wrapper{
     padding: 100px;
 }
 input{
