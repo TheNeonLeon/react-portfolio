@@ -141,7 +141,7 @@ save songs.
               Feel free to check out the code on Github!
                 <hr></hr>
                 <b>Technologies:</b> React, React-spring, React-router,
-                Bootstrap, Particle.js
+                Bootstrap
             </h4>
           
             <a
