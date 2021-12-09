@@ -83,29 +83,7 @@ function Home() {
       <div class="container-fluid">
         
         <div class="row">
-        <div class="col-md">
-            <img class="img-fluid" src={moviehub} alt="project"></img>
-            <h3>The movie hub</h3>
-            <h4>A web-app where you can see information and reviews on the most current trending movies from a database, 
-              and also search for movies you would like to know more about. The web-app is fully responsive.
-                <hr></hr>
-                <b>Technologies:</b> React, REST API, Material UI
-            </h4>
-            <a
-              href="https://the-movie-hub.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i class="bi bi-display"></i>
-            </a>
-            <a
-              href="https://github.com/TheNeonLeon/the-movie-hub"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i class="bi bi-code-slash"></i>
-            </a>
-            </div>
+        
           
           <div class="col-md">
             <img class="img-fluid" src={music} alt="project"></img>
@@ -133,6 +111,29 @@ save songs.
               <i class="bi bi-code-slash"></i>
             </a>
           </div>
+          <div class="col-md">
+            <img class="img-fluid" src={moviehub} alt="project"></img>
+            <h3>The movie hub</h3>
+            <h4>A web-app where you can see information and reviews on the most current trending movies from a database, 
+              and also search for movies you would like to know more about. The web-app is fully responsive.
+                <hr></hr>
+                <b>Technologies:</b> React, REST API, Material UI
+            </h4>
+            <a
+              href="https://the-movie-hub.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="bi bi-display"></i>
+            </a>
+            <a
+              href="https://github.com/TheNeonLeon/the-movie-hub"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="bi bi-code-slash"></i>
+            </a>
+            </div>
 
         </div>
         <div class="row">
