@@ -2,6 +2,7 @@ import "./App.scss";
 import tdd from "./img/tdd-app.png";
 import music from "./img/musicscape.png";
 import portfolio from "./img/portfolio.png";
+import moviehub from './img/moviehub2.png'
 import ContactMe from "./ContactMe";
 
 import { useSpring, animated } from "react-spring";
@@ -82,32 +83,30 @@ function Home() {
       <div class="container-fluid">
         
         <div class="row">
-          <div class="col-md">
-            <img class="img-fluid" src={tdd} alt="project"></img>
-            <h3>The Meetup Hub</h3>
-            <h4>
-              Built a responsive web app. You can see different events from a
-              static JSON file in a user-friendly way. You can register for an
-              event with a form. The data in the form is saved in localStorage
-              <hr></hr>
-             <b> Technologies:</b> Vuejs, Vue-router, Docker, unit testing with vue test utils and
-jest
+        <div class="col-md">
+            <img class="img-fluid" src={moviehub} alt="project"></img>
+            <h3>The movie hub</h3>
+            <h4>A web-app where you can see information and reviews on the most current trending movies from a database, 
+              and also search for movies you would like to know more about. The web-app is fully responsive.
+                <hr></hr>
+                <b>Technologies:</b> React, REST API, Material UI
             </h4>
             <a
-              href="https://tdd-vue-app.herokuapp.com/#/"
+              href="https://the-movie-hub.netlify.app/"
               target="_blank"
               rel="noreferrer"
             >
               <i class="bi bi-display"></i>
             </a>
             <a
-              href="https://github.com/TheNeonLeon/tdd-app"
+              href="https://github.com/TheNeonLeon/the-movie-hub"
               target="_blank"
               rel="noreferrer"
             >
               <i class="bi bi-code-slash"></i>
             </a>
-          </div>
+            </div>
+          
           <div class="col-md">
             <img class="img-fluid" src={music} alt="project"></img>
             <h3>MusicScape</h3>
@@ -134,7 +133,37 @@ save songs.
               <i class="bi bi-code-slash"></i>
             </a>
           </div>
-          <div class="col-md">
+
+        </div>
+        <div class="row">
+        
+            <div class="col-md">
+            <img class="img-fluid" src={tdd} alt="project"></img>
+            <h3>The Meetup Hub</h3>
+            <h4>
+              Built a responsive web app. You can see different events from a
+              static JSON file in a user-friendly way. You can register for an
+              event with a form. The data in the form is saved in localStorage
+              <hr></hr>
+             <b> Technologies:</b> Vuejs, Vue-router, Docker, unit testing with vue test utils and
+jest
+            </h4>
+            <a
+              href="https://tdd-vue-app.herokuapp.com/#/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="bi bi-display"></i>
+            </a>
+            <a
+              href="https://github.com/TheNeonLeon/tdd-app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="bi bi-code-slash"></i>
+            </a>
+          </div>
+        <div class="col-md">
             <img class="img-fluid" src={portfolio} alt="project"></img>
             <h3>Portfolio</h3>
             <h4>My personal portfolio, built using different types of technologies. It's responsive so it fits for every type of device.
@@ -151,9 +180,8 @@ save songs.
             >
               <i class="bi bi-code-slash"></i>
             </a>
-            </div>
         </div>
-        
+        </div>
       </div>
 
     </animated.div>
