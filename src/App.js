@@ -78,7 +78,7 @@ function Home() {
     <animated.div style={props} className="home-container" >
     <ParticleBackground  />
 
-      <h1>Hello, my name is Leon Listo. I'm a Front-end developer.</h1>
+      <h1>Hello, my name is Leon Listo. I'm a Full-stack developer.</h1>
       <h3> Welcome to my portfolio. Check out my projects</h3>
       <div class="container-fluid">
         
